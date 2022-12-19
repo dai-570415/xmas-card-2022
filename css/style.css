@@ -1,0 +1,22 @@
+/* font-family: 'Noto Sans JP', sans-serif; */
+/* font-family: 'Josefin Sans', sans-serif; */
+/* font-family: 'EB Garamond', serif; */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "EB Garamond", serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}

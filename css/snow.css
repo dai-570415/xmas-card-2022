@@ -1,0 +1,176 @@
+.snowContainer {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/sp-xmas.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.snowContainer h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 100;
+    color: #fff;
+    width: 240px;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: fadeInTitle 1.5s ease-in-out;
+            animation: fadeInTitle 1.5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+@-webkit-keyframes fadeInTitle {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInTitle {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.snowContainer::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+}
+.snowContainer .snow {
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-animation: snowFall 10s linear;
+            animation: snowFall 10s linear;
+    z-index: 1;
+}
+@-webkit-keyframes snowFall {
+    0% {
+        opacity: 0;
+        top: 0;
+        transform: translateX(5px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(-5px);
+    }
+    20% {
+        transform: translateX(5px);
+    }
+    30% {
+        transform: translateX(0px);
+    }
+    40% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    60% {
+        transform: translateX(5px);
+    }
+    70% {
+        transform: translateX(0px);
+    }
+    80% {
+        transform: translateX(-5px);
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 0;
+        top: 100vh;
+        transform: translateX(0px);
+    }
+}
+@keyframes snowFall {
+    0% {
+        opacity: 0;
+        top: 0;
+        transform: translateX(5px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(-5px);
+    }
+    20% {
+        transform: translateX(5px);
+    }
+    30% {
+        transform: translateX(0px);
+    }
+    40% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(0px);
+    }
+    60% {
+        transform: translateX(5px);
+    }
+    70% {
+        transform: translateX(0px);
+    }
+    80% {
+        transform: translateX(-5px);
+    }
+    90% {
+        opacity: 1;
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 0;
+        top: 100vh;
+        transform: translateX(0px);
+    }
+}
+.snowContainer .audio_wrap {
+    color: #fff;
+    position: absolute;
+    z-index: 10;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+.snowContainer .audio_wrap .audio_button {
+    width: 50px;
+    height: 50px;
+}
+.snowContainer .audio_wrap .audio_button img {
+    width: 100%;
+    height: 100%;
+}
+@media screen and (min-width: 768px) {
+    .snowContainer {
+        background-image: url(../img/xmas.png);
+    }
+    .snowContainer h1 {
+        font-size: 80px;
+        width: 480px;
+    }
+    .snowContainer .audio_wrap {
+        top: 70%;
+        transform: translate(-50%, -70%);
+    }
+    .snowContainer .audio_wrap .audio_button {
+        width: 64px;
+        height: 64px;
+    }
+}
